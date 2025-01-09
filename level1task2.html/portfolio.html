@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #f0f0f0;
+            background: #121212;
+        }
+
+        header {
+            background: #1f1f1f;
+            color: #f0f0f0;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background: #2c2c2c;
+            padding: 0.5rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            overflow: hidden;
+            padding: 1rem 20px;
+        }
+
+        .about, .projects, .contact {
+            padding: 2rem 0;
+        }
+
+        .about img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .projects {
+            background: #1f1f1f;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .projects ul {
+            list-style: none;
+            padding: 1rem;
+        }
+
+        .projects ul li {
+            margin-bottom: 1rem;
+            background: #2c2c2c;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .projects ul li strong {
+            color: #00bcd4;
+        }
+
+        .contact {
+            background: #1f1f1f;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact form input, .contact form textarea {
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #333;
+            background: #2c2c2c;
+            color: #f0f0f0;
+            border-radius: 8px;
+        }
+
+        .contact form button {
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: none;
+            background: #00bcd4;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact form button:hover {
+            background: #0097a7;
+        }
+
+        footer {
+            background: #1f1f1f;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about img {
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my personal space on the web!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <img src="pfimg.jpeg" alt="Your Picture">
+            <p>Hello! I am chirag gadher, a passionate developer with a love for creating beautiful and functional websites. I specialize in front-end and back-end development, ensuring smooth user experiences. With a strong foundation in HTML, CSS, JavaScript, and frameworks like React and Node.js, I bring ideas to life. When I'm not coding, I enjoy exploring new technologies and contributing to open-source projects.</p>
+            <p>I also have experience in working with cloud platforms like AWS and Azure, enhancing scalability and reliability of web applications. My curiosity drives me to learn and implement cutting-edge solutions, and I enjoy mentoring aspiring developers in their journey.</p>
+            <p>Achievements include completing a certification in Full-Stack Development, contributing to successful app launches, and mentoring junior developers. I take pride in designing solutions that are both efficient and user-friendly.</p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li><strong>Project 1:</strong> A responsive e-commerce website with a dynamic product catalog and cart system. Features include secure payment integration, user authentication, personalized recommendations, and order tracking functionality.</li>
+                <li><strong>Project 2:</strong> A blog platform with user authentication and content management features. It includes a WYSIWYG editor, comment moderation, SEO optimization, and a feature to schedule posts for future publication.</li>
+                <li><strong>Project 3:</strong> A weather app that fetches real-time data using APIs. The app displays current weather conditions, a five-day forecast, air quality index, and includes geolocation-based weather updates.</li>
+                <li><strong>Project 4:</strong> A portfolio builder tool allowing users to customize and host their professional portfolios. Includes drag-and-drop functionality, theme customization, and export options.</li>
+                <li><strong>Project 5:</strong> A healthcare appointment booking system with doctor profiles, calendar integration, and video consultation options, ensuring streamlined patient management.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to work together or have any questions, feel free to reach out. I'm always open to discussing new ideas, collaborations, or opportunities!</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 chirag. All Rights Reserved.</p>
+        <p>Follow me on <a href="#" style="color: #00bcd4;">LinkedIn</a>, <a href="#" style="color: #00bcd4;">GitHub</a>, and <a href="#" style="color: #00bcd4;">Twitter</a>.</p>
+    </footer>
+</body>
+</html>
